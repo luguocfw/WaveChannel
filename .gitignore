@@ -1,0 +1,17 @@
+*.vcxproj
+*.filters
+*.vcxproj.filters
+*.VC.db
+*.VC.VC.opendb
+*.sln
+*.swp
+Makefile
+*.mk
+*.Makefile
+*.pcm
+/Default/
+/Debug/
+/.vs/
+/out/
+/tools/
+/rs_codec/Debug/
