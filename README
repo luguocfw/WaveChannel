@@ -14,7 +14,7 @@
   
   编译方法：
   WINDOWS VS2015:
-    1.安装python。
+    1.安装python,gyp工具是基于这个的，python必须是2.7版本！！
     3.git clone https://github.com/luguocfw/WaveChannel.git
       cd WaveChannel
       build_windows.bat        注：此过程由于要下载gyp工具（gyp工具再github上），需要连网
