@@ -27,5 +27,5 @@
       此时生成Makefile文件。
       make 
   其他平台的编译可以通过其他途径实现，目前该代码已在安卓和IOS上编译通过。
-    
+  原理描述的博文链接:https://blog.csdn.net/u013095415/article/details/79930354
   
