@@ -1,9 +1,9 @@
-                              WaveChannel(声波信道、声波通信)
+                            WaveChannel(声波信道、声波通信)
 项目描述：
   1.利用声波进行短距离通信，项目同时包含发送端和接收端。
   2.除FFT、RS codec和CRC codec相关接口外，为本项目独立开发。
-  3.代码主要是c，代码管理用的是google的GYP，可以在linux和VS2015上运行。安卓和IOS需额外部署环境
-  4.编译：代码编译除标准库外没有其他依赖，但是GYP工具需要在环境中准备好，由于代码没有依赖，也可以用别的方式编译。
+  3.代码主要是c，代码管理用的是google的GYP，可以在linux和windows上运行。安卓和IOS需额外部署环境
+  4.编译：代码编译除标准库外没有其他依赖。
   5.复杂度：接收端目前应用在ARM9 32bit单核500MHzCPU上，使用率是30%左右，内存除音频源占用的外，估计在2-4K左右。发送端不是持续运算，
 所以暂时不考虑发送端的时间复杂度和空间复杂度。
   6.传输速度：166.67bps。
@@ -12,7 +12,7 @@
   9.传输声音频率范围：1375~7250Hz。
   （注：项目之前名称是wavetrans，从代码命名可以看出来，为了避免和另一个也叫WaveTrans的工程重名改为WaveChannel）
   
-  编译方法：
+  编译方法：(详细编译方法见该博文：https://blog.csdn.net/u013095415/article/details/105231496)
   WINDOWS VS2015:
     1.安装python,gyp工具是基于这个的，python必须是2.7版本！！
     3.git clone https://github.com/luguocfw/WaveChannel.git
@@ -20,12 +20,11 @@
       build_windows.bat        注：此过程由于要下载gyp工具（gyp工具再github上），需要连网
     生成wave_trans.sln文件，双击打开编译就行。
  LINUX：
-    1.安装python。
+    1.安装python2.7。
     3.git clone https://github.com/luguocfw/WaveChannel.git
       cd WaveChannel
       ./build_linux.sh          注：此过程由于要下载gyp工具（gyp工具再github上），需要连网
       此时生成Makefile文件。
       make 
   其他平台的编译可以通过其他途径实现，目前该代码已在安卓和IOS上编译通过。
-    
-  
+  原理描述的博文链接:https://blog.csdn.net/u013095415/article/details/79930354
