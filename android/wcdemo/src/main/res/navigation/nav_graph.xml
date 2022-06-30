@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.cfwang.wcdemo.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_sendFragment"
+            app:destination="@id/sendFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_recvFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendFragment"
+        android:name="com.cfwang.wcdemo.SendFragment"
+        android:label="fragment_send"
+        tools:layout="@layout/fragment_send">
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.cfwang.wcdemo.RecvFragment"
+        android:label="fragment_recv"
+        tools:layout="@layout/fragment_recv" >
+    </fragment>
+</navigation>

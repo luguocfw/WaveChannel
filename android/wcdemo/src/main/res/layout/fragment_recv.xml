@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cfwang.wcdemo.RecvFragment">
+
+    <TextView
+        android:id="@+id/tex_data"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:text="" />
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|left"
+        android:text="start" />
+    <Button
+        android:id="@+id/btn_clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="clean" />
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|right"
+        android:text="stop" />
+
+    <TextView
+        android:id="@+id/tex_status"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="未开始" />
+</FrameLayout>
